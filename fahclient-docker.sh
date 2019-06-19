@@ -22,4 +22,4 @@ for ARG in $@; do
   }
 done
 
-echo $DOCKER run --rm --user $(id -u):$(id -g) $NETOPTS $MOUNTS $IMAGE $ARGS
+$DOCKER run --rm --user $(id -u):$(id -g) $NETOPTS $MOUNTS $IMAGE $ARGS
